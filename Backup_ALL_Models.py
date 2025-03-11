@@ -196,6 +196,7 @@ def main():
             return 1
         
         model_names = extract_names(data)
+        model_names.reverse()
         
         if not model_names:
             print("No models found to backup.")
